@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Changed from main to master since that's your default branch
+      - master
 
 jobs:
   deploy:
@@ -16,6 +16,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .  # Deploy the entire repository
+          folder: .
           branch: gh-pages
           clean: true 
